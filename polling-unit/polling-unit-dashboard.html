@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PollingUnitDashboard</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/polling-unit-dashboard.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" type="text/css" href="../css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-dark navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="mt-2 mr-1">
+                    <div>
+                        <input type="checkbox">
+                        <span style="color: #c2c7d0;">Light Mode </span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link">
+                <img src="../images/logo1.jpg" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Osun Election</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image text-light pt-2">
+                        <i class="fas fa-democrat"></i>
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block" style="font-size: 20px;">Polling Unit</a>
+                    </div>
+                </div>
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item menu-open mb-3 pb-3 user-panel">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-vote-yea"></i>
+                                <p>
+                                    Result
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add Result</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item menu-open user-panel">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-person-booth"></i>
+                                <p>
+                                    Manage Results
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Presidential</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Governorship</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Senetorial</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>House Of Rep</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>
+                                    LogOut
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="background:  #454d55;">
+            <!-- Content Header (Page header) -->
+            <div class="content-header text-light mb-3" style="border-bottom: 1px solid #4f5962;">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Polling Unit Dashboard</h1>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+            <div style="border-bottom: 1px solid #4f5962;">
+                <div class="btn-group ml-3 navbar-dark btn-group-lg mb-3">
+                    <button type="button" class="btn navbar-dark btn-flat" style="color: #c2c7d0;">Select Election Type</button>
+                    <button type="button" class="btn navbar-dark btn-flat dropdown-toggle dropdown-icon" data-toggle="dropdown" style="color: #c2c7d0;">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Presidential</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Governorship</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Senetorial</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">House of Representative</a>
+                    </div>
+                </div>
+            </div>
+            <div style="border-bottom: 1px solid #4f5962;">
+                <div class="card card-secondary mt-3 ml-3 mr-3 mb-3">
+                    <div class="card-header brand-color ">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-7 col-md-8 mb-3 result-head">
+                                <h3 class="card-title">Input Scores</h3>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-md-4 result-head">
+                                <div id="example1_filter" class="dataTables_filter">
+                                    <label for=""><span class="search-txt"> Search: </span><input type="search" class="form-control control-form small-search" placeholder aria-controls="example1" style="width: 60% !important;">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body ">
+                        <div class="row ro">
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/A.jpg" alt="" style="width: 50px;"> A: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/AA.jpg" alt="" style="width: 50px;"> AA: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/ADP.png" alt="" style="width: 50px;"> ADP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/APP.png" alt="" style="width: 50px;"> APP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/AAC.jpg" alt="" style="width: 50px;"> AAC: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/ADC.jpg" alt="" style="width: 50px;"> ADC: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/apclogo.jpg" alt="" style="width: 50px;"> APC: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/APGA.jpg" alt="" style="width: 50px;"> APGA: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/APM.jpg" alt="" style="width: 50px;"> APM: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/BootParty.jpg" alt="" style="width: 50px;"> BP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/LP.jpg" alt="" style="width: 50px;"> LP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/NRM.png" alt="" style="width: 50px;"> NRM: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/NNPP.jpg" alt="" style="width: 50px;"> NNPP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/PDP.jpg" alt="" style="width: 50px;"> PDP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/PRP.png" alt="" style="width: 50px;"> PRP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/SDP.png" alt="" style="width: 50px;"> SDP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/YPP-Logo.jpeg" alt="" style="width: 50px;"> YPP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 mb-3">
+                                <label for=" "><img src="../images/ZLP.jpg" alt="" style="width: 50px;"> ZLP: </label>
+                                <input type="text " class="form-control control-form fcc">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-3">
+                <div class="card mt-3 ml-3 mr-3">
+                    <div class="card-header brand-color">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-7 col-md-8 mb-3 result-head">
+                                <h3 class="card-title">Manage Results</h3>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-md-4 result-head">
+                                <div id="example1_filter" class="dataTables_filter">
+                                    <label for=""><span class="search-txt"> Search: </span><input type="search" class="form-control control-form small-search"    placeholder aria-controls="example1" style="width: 60% !important;">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="card-body table-responsive p-0 responsive-table">
+                            <table class="table table-head-fixed text-nowrap table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Party</th>
+                                        <th> <img src="../images/A.jpg" alt="" style="width: 50px;"> A</th>
+                                        <th><img src="../images/AA.jpg" alt="" style="width: 50px;"> AA</th>
+                                        <th><img src="../images/ADP.png" alt="" style="width: 50px;"> ADP</th>
+                                        <th><img src="../images/APP.png" alt="" style="width: 50px;"> APP</th>
+                                        <th><img src="../images/AAC.jpg" alt="" style="width: 50px;"> AAC</th>
+                                        <th><img src="../images/ADC.jpg" alt="" style="width: 50px;"> ADC</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Results</td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"> </td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"> </td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                        <td rowspan="5">
+                                            <a class="btn btn-app">
+                                                <i class="fas fa-edit"></i> Update
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Party</th>
+                                        <th><img src="../images/apclogo.jpg" alt="" style="width: 50px;"> APC</th>
+                                        <th><img src="../images/APGA.jpg" alt="" style="width: 50px;"> APGA</th>
+                                        <th><img src="../images/APM.jpg" alt="" style="width: 50px;"> APM</th>
+                                        <th><img src="../images/BootParty.jpg" alt="" style="width: 50px;"> BP</th>
+                                        <th><img src="../images/LP.jpg" alt="" style="width: 50px;"> LP</th>
+                                        <th><img src="../images/NRM.png" alt="" style="width: 50px;"> NRM</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Results</td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"> </td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"> </td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Party</th>
+                                        <th><img src="../images/NNPP.jpg" alt="" style="width: 50px;"> NNPP</th>
+                                        <th><img src="../images/PDP.jpg" alt="" style="width: 50px;"> PDP</th>
+                                        <th><img src="../images/PRP.png" alt="" style="width: 50px;"> PRP</th>
+                                        <th><img src="../images/SDP.png" alt="" style="width: 50px;"> SDP</th>
+                                        <th><img src="../images/YPP-Logo.jpeg" alt="" style="width: 50px;"> YPP</th>
+                                        <th><img src="../images/ZLP.jpg" alt="" style="width: 50px;"> ZLP</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Results</td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"></td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"> </td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"> </td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"> </td>
+                                        <td> <input type="text" value="76876" readonly class="form-control fc"> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer brand-color" style="border-top: 1px solid #4f5962;">
+            <strong>Copyright &copy; 2021 <a href="">Osun State Election Monitoring</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js "></script>
+    <!-- Bootstrap 4 -->
+    <script src="../js/bootstrap.bundle.min.js "></script>
+    <!-- AdminLTE App -->
+    <script src="../js/adminlte.min.js "></script>
+</body>
+
+</html>

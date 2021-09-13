@@ -1,0 +1,48 @@
+.brand-color {
+    background-color: #343a40 !important;
+    color: #c2c7d0 !important;
+}
+
+.control-form {
+    display: inline-block !important;
+    width: 50% !important;
+}
+
+.search-txt {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.card-header {
+    padding-bottom: 0.5rem !important;
+}
+
+.card-title {
+    font-size: 1.5rem !important;
+}
+
+td,
+th {
+    vertical-align: middle !important;
+}
+
+@media (max-width: 576px) {
+    .result-head {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center !important;
+    }
+    .card-title {
+        float: none !important;
+    }
+    .small-search {
+        height: 30px !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .fc {
+        width: 100%;
+        min-width: 77px;
+    }
+}
